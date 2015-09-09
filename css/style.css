@@ -7,8 +7,9 @@ h1 {
 }
 
 body {
-  background-image: url("http://p1.pichost.me/i/13/1356832.jpg");
-  color: white;
+    background-color: grey;
+  background-image: url("../images/jaisalmer.jpg");
+  color:white;
   font-family: 'Indie flower';
   font-size: 200%;
 }
