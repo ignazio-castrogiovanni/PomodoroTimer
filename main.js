@@ -80,14 +80,18 @@ function changeTimerStatus(display) {
         var timenode = document.querySelector("#time");
         var workTime = document.querySelector("#pomodoroTime").textContent;
         var breakTime = document.querySelector("#breakTime").textContent;
-        alert("1");
         
-        timenode.textContent = taskTime ? workTime + ":" + "00" : breakTime + ":" + "00";
-        alert("2");
-        changeTimerStatus(timenode);
-        alert("3");
-        changeTimerStatus(timenode);
-        alert("timer started again");
+        timeValue = taskTime ? workTime : breakTime;
+        timeValueNorm = (timeValue < 10) ? "0" + timeValue : timeValue;  
+        timenode.textContent = timeValueNorm + ":" + "00";
+        timer = computeClockTimeInSeconds(timenode.textContent);
+        minutes = parseInt(timer / 60);
+        seconds = parseInt(timer % 60);
+//        alert("2");
+//        changeTimerStatus(timenode);
+//        alert("3");
+//        changeTimerStatus(timenode);
+//        alert("timer started again");
       }
       timerRunning = true;
     },1000);

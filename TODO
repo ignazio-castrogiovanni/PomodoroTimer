@@ -1,2 +1,5 @@
 TODO
-- Fix a bug that avoid the break time to start after the work time.
+- Fix a bug that avoid the break time to start after the work time - DONE
+- Change timer clock layout.
+- Add a progress bar (OPTIONAL).
+- Refactor
